@@ -21,6 +21,12 @@ echo "✅ Versi Node.js dan NPM:"
 node -v
 npm -v
 
+echo "⬇️ Menginstal pm2 (process manager)..."
+npm install -g pm2
+
+echo "✅ Versi PM2:"
+pm2 -v
+
 echo "🚀 Melanjutkan ke instalasi Puppeteer dependencies..."
 
 apt install -y wget curl gnupg2 ca-certificates fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
@@ -45,4 +51,10 @@ echo "    executablePath: '/usr/bin/google-chrome',"
 echo "    args: ['--no-sandbox', '--disable-setuid-sandbox']"
 echo "  });"
 echo ""
-echo "🎉 Semua selesai! Siap pakai Puppeteer dengan Node.js 18 dan Chrome!"
+echo "📦 Gunakan PM2 untuk menjalankan aplikasi tanpa putus:"
+echo ""
+echo "  pm2 start namafile.js"
+echo "  pm2 save"
+echo "  pm2 startup"
+echo ""
+echo "🎉 Semua selesai! Node.js 18, Puppeteer, Google Chrome, dan PM2 sudah siap!"
