@@ -27,6 +27,9 @@ npm install -g pm2
 echo "✅ Versi PM2:"
 pm2 -v
 
+echo "📦 Menginstal module tambahan yang dibutuhkan..."
+npm install qrcode-terminal whatsapp-web.js node-ssh tesseract.js node-cron
+
 echo "🚀 Melanjutkan ke instalasi Puppeteer dependencies..."
 
 apt install -y wget curl gnupg2 ca-certificates fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
@@ -53,8 +56,8 @@ echo "  });"
 echo ""
 echo "📦 Gunakan PM2 untuk menjalankan aplikasi tanpa putus:"
 echo ""
-echo "  pm2 start namafile.js"
+echo "  pm2 start scriptmu.js"
 echo "  pm2 save"
 echo "  pm2 startup"
 echo ""
-echo "🎉 Semua selesai! Node.js 18, Puppeteer, Google Chrome, dan PM2 sudah siap!"
+echo "🎉 Semua selesai! Node.js 18, Puppeteer, Chrome, PM2, dan semua module sudah terinstal!"
